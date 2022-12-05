@@ -65,7 +65,7 @@ As the Kaggle test data are limited to a specific period of time, it may not be 
 - what models were used? describe the rationale.
 - what were the best results (on training data, then compare with Kaggle)?
 
-### The B-Models (Non-Time-Series Based) Approach
+### The B-Models (Time-Series Based) Approach
 - what models were used? describe the rationale.
 - what were the best results (on training data, then compare with Kaggle)?
 
