@@ -62,17 +62,24 @@ As the Kaggle test data are limited to a specific period of time, it may not be 
 
 
 ### The A-Models (Non-Time-Series Based) Approach
-- what models were used? describe the rationale.
-- what were the best results (on training data, then compare with Kaggle)?
+We tried several more commonly used algorithms at this stage. These models include Linear Regression, Regularized Regression Models (Lasso, Ridge, Elastic Net) as well as tree-based models (i.e., Decision Tree, Random Forest). Additionally, we tuned the hyperparameters of these models. 
+
+The best result was achieved by ..., MAE(training) = ... and MAE(kaggle test) = ...
+
 
 ### The B-Models (Time-Series Based) Approach
-- what models were used? describe the rationale.
-- what were the best results (on training data, then compare with Kaggle)?
+We also used time-series based models like ...
+
+The best result was achieved with ...,  MAE(training) = ... and MAE(kaggle test) = ...
+
 
 ### Ensembling the Best Models
-- putting together Best Model A and Best Model B
+Finally, we bundled together the best models' predictions into an ensemble. The results showed that this approach resulted in a [BETTER/POORER] performance as the best model ...,  MAE(training) = ... and MAE(kaggle test) = ...
+
 
 ## Summary and Conclusions
+The best model predicting energy consumption was ... 
+
 
 <font color = 'red'> Siia lisame koondjoonise, kus on erinevate mudelite meetrikud ja/või Kaggle skoorid (võime need ka samale joonisele lisada)  </font>
 
