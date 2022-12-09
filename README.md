@@ -47,14 +47,8 @@ We also imputed the missing values of three features:
 - `prcp`: we used the fill-forward imputation method.
 - `coco`: we used the fill-forward imputation method (also converted to a categorical variable).
 
-
-- (standardiseerimine/normaliseerimine? M +- 2SD?)
-
 #### B: Preprocessing for Time-Series Models
 As the Kaggle test data are limited to a specific period of time, it may not be fruitful to use the entire time-series for modeling. For instance, it is common that the energy consumption in winter is driven by heating which is seldomly the case in summer. Hence, we included the data of the last months to model time-series.
-
-
-- (standardiseerimine/normaliseerimine, M +- 2SD?)
 
 ## Results
 - võime kohe algusesse panna ploti, mis võtab kõik kokku
