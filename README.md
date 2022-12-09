@@ -7,7 +7,7 @@ Eerik Sven Puudist <br>
 Triin Pohla <br>
 Andri Hõbemägi <br>
 
-** Project Owner**: Kristjan Eljand
+**Project Owner**: Kristjan Eljand
 
 ## Project Topic, Relevance, and Goals
 - Increases in energy price can seriously disrupt the daily life of people
