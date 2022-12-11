@@ -22,33 +22,24 @@ Andri Hõbemägi <br>
   - Tangible value: Providing as accurate predictions as possible
 
 ## Project Workflow
-Below is a high-level overview of our project workflow on which we elaborate further. In general, we decided to try out different methods in modeling the timeseries: (A) the time-invariant modeling approach which treats time-related variables as usual model features (as opposed to time-series), and (2B) the time-series baed approach. While the former utilizes the information gained from features, the latter typically only needs the sequence of target values. Finally, we ensemble the best of the two approaches in order to see if this improves the predictions.
+# Predicting Electricity consumption
 
-1. Original Dataset
-2. Data Preprocessing
-3. Modelling
-  - Simpler Baselines
-  - Non-Time-Series Based Models
-  - Time-Series Based Models
-  - Ensemble of our Best Models
-4. Final Results
+## Team
+Dmitri Rozgonjuk <br>
+Eerik Sven Puudist <br>
+Triin Pohla  <br>
+Andri Hõbemägi <br>
 
-### 1. Original Dataset
-The data were retrieved from https://www.kaggle.com/competitions/predict-electricity-consumption. Because the link as well as our main Jupyter notebook (<font color='red'> INCLUDE NAME OF NOTEBOOK </font>) include more detailed overview of the datasets, we refer the read to see them.
-    
-### 2. Data Preprocessing and Augmentation
-In order to compute the models in the view of the two modeling approaches (A: non-time-series based; B: time-series models), we first needed to use pre-processing of data. Firstly, for the both models we imputed the marginal amount of missing data in the target feature by using interpolation (imputation with the average of the previous and next value). We also computed a series of autocorrelations to see if it could be useful to use rolling averages across different time intervals. We found that autocorrelations until three timepoints (i.e., three hours) had high enough correlations to be considered useful (i.e., the correlations dropped more drastically). Hence, we also computed rolling averages for two and three hours across the training data set. Finally, we also log-normalized the original imputed targets as well as the targets base don rolling averages.
+**Product Owner:** Kristjan Eljand
 
-#### A: Preprocessing for Non-Time-Series Models
-Relevant to modeling the target from features, we first extracted different time-based features from the time sequence feature. We extracted the year, month, month of day, day of week (as integers in order), name of the day (categorical variable), weekend variable (yes or no), hour of the day, season (summer, fall, winter, spring). Additionally, we used an external module to fetch all Estonian holidays for the time period. This resulted in two additional features: whether it is a holiday or not, and holiday type.
+# Introduction
+The present project was a capstone project for the Machine Learning (MTAT.03.227) course. The general aim was to predict a household's energy consumption. A major side goal of our team was to try out different modeling techniques for educational purposes.
 
-We also imputed the missing values of three features:
-- `snow`: we essentially used a manual version of fill-forward imputation (using the previous value to impute the missing value).
-- `prcp`: we used the fill-forward imputation method.
-- `coco`: we used the fill-forward imputation method (also converted to a categorical variable).
+## Our Approach
+Our general approach is illustrated in Figure 1, and the steps with detailed annotation are completed throughout this notebook.
+![](images/ML_project_workflow.png "Figure 1. General Project Workflow")
 
-#### B: Preprocessing for Time-Series Models
-As the Kaggle test data are limited to a specific period of time, it may not be fruitful to use the entire time-series for modeling. For instance, it is common that the energy consumption in winter is driven by heating which is seldomly the case in summer. Hence, we included the data of the last months to model time-series.
+It is noteworthy that although the process seems to be relatively linear, this is to illustrate the general workflow from data ingestion to Kaggle submission. In reality, the process included several changes on-the-go, since we learned about new methods and techniques during the project. However, for the sake of cohesion, we display the **general** solution within the present notebook. This means that the model goodness metrics should reflect the **relative** goodness (not the metrics achieved throughout the project process). The original models which were used for actual submissions are split between different notebooks which are stored in the `x_old_files` directory. Although those notebooks had differences in some methods (e.g., how train-test split was done, which target variable was used, etc), the present notebook distills the optimal solutions found with those methods. To that end, we found it fruitful to limit the amount of data used for training (using `prophet`, the best MAE scores were obtained when training was done from May 1st 2022), doing the 80-20 train-validation split based on time (i.e., earlier time series were used as training, later/last timeseries as validation), computing the rolling averages for the target variable and using the 3-hour rolling average as the main target feature.
 
 ## Results
 - võime kohe algusesse panna ploti, mis võtab kõik kokku
