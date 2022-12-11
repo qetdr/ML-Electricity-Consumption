@@ -37,7 +37,9 @@ The present project was a capstone project for the Machine Learning (MTAT.03.227
 
 ## Our Approach
 Our general approach is illustrated in Figure 1, and the steps with detailed annotation are completed throughout this notebook.
-![](images/ML_project_workflow.png "Figure 1. General Project Workflow")
+//![](images/ML_project_workflow.png "Figure 1. General Project Workflow")
+
+![Figure 1](https://github.com/qetdr/ML-Electricity-Consumption/blob/main/images/ML_project_workflow.png)
 
 It is noteworthy that although the process seems to be relatively linear, this is to illustrate the general workflow from data ingestion to Kaggle submission. In reality, the process included several changes on-the-go, since we learned about new methods and techniques during the project. However, for the sake of cohesion, we display the **general** solution within the present notebook. This means that the model goodness metrics should reflect the **relative** goodness (not the metrics achieved throughout the project process). The original models which were used for actual submissions are split between different notebooks which are stored in the `x_old_files` directory. Although those notebooks had differences in some methods (e.g., how train-test split was done, which target variable was used, etc), the present notebook distills the optimal solutions found with those methods. To that end, we found it fruitful to limit the amount of data used for training (using `prophet`, the best MAE scores were obtained when training was done from May 1st 2022), doing the 80-20 train-validation split based on time (i.e., earlier time series were used as training, later/last timeseries as validation), computing the rolling averages for the target variable and using the 3-hour rolling average as the main target feature.
 
