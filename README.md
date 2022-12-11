@@ -9,19 +9,7 @@ Andri Hõbemägi <br>
 
 **Project Owner**: Kristjan Eljand
 
-## Project Topic, Relevance, and Goals
-- Increases in energy price can seriously disrupt the daily life of people
-- Accurate estimation is relevant on individual level
-  - Energy bills and household budgeting
-- Accurate estimation is relevant on societal/environmental level
-  - Revising energy consumption and reducing where possible
-  - Reducing ecological footprint
-- Our topic: Predicting energy consumption of a household
-- Our goals:
-  - Educational: Trying out different modeling techniques learned in the course
-  - Tangible value: Providing as accurate predictions as possible
-
-# Introduction
+## Project Goal
 The present project was a capstone project for the Machine Learning (MTAT.03.227) course. The general aim was to predict a household's energy consumption. A major side goal of our team was to try out different modeling techniques for educational purposes.
 
 ## Our Approach
