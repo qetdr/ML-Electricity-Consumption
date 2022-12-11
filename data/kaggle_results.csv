@@ -1,0 +1,41 @@
+﻿Model;Specifics;Score;ScoreLabel
+LR;LR;0.44184;PublicScore
+LR;LR (May);0.3544;PublicScore
+Ridge;Ridge;0.40911;PublicScore
+Ridge;Ridge (May);0.33932;PublicScore
+DT;DecisionTree;1.33609;PublicScore
+DT;DecisionTree (May);0.36449;PublicScore
+RF;RF;0.64259;PublicScore
+RF;RF (May);0.40432;PublicScore
+auto-sklearn;auto-sklearn (5 min);0.37109;PublicScore
+auto-sklearn;auto-sklearn (60 min);0.36815;PublicScore
+XGBoost;XGBoost;0.62141;PublicScore
+XGBoost;XGBoost (iterative);0.77139;PublicScore
+skforecast;SKForecast;0.70302;PublicScore
+skforecast;SKForecast (May);0.49135;PublicScore
+Prophet;Prophet;0.35775;PublicScore
+Prophet;Prophet (May log2);0.30991;PublicScore
+Prophet;Prophet (May);0.30344;PublicScore
+Ensemble;Ensamble (Ridge+Prophet);0.37119;PublicScore
+Ensemble;Ensamble (LR, Ridge, DT, RF);0.35564;PublicScore
+Ensemble;Ensamble (Prophets);0.30531;PublicScore
+LR;LR;0.51609;PrivateScore
+LR;LR (May);0.41175;PrivateScore
+Ridge;Ridge;0.48436;PrivateScore
+Ridge;Ridge (May);0.40634;PrivateScore
+DT;DecisionTree;1.72418;PrivateScore
+DT;DecisionTree (May);0.4193;PrivateScore
+RF;RF;0.71368;PrivateScore
+RF;RF (May);0.42748;PrivateScore
+auto-sklearn;auto-sklearn (5 min);0.43853;PrivateScore
+auto-sklearn;auto-sklearn (60 min);0.44514;PrivateScore
+XGBoost;XGBoost;0.67304;PrivateScore
+XGBoost;XGBoost (iterative);0.60341;PrivateScore
+skforecast;SKForecast;0.73631;PrivateScore
+skforecast;SKForecast (May);0.56489;PrivateScore
+Prophet;Prophet;0.46849;PrivateScore
+Prophet;Prophet (May log2);0.39604;PrivateScore
+Prophet;Prophet (May);0.4208;PrivateScore
+Ensemble;Ensamble (Ridge+Prophet);0.46557;PrivateScore
+Ensemble;Ensamble (LR, Ridge, DT, RF);0.41083;PrivateScore
+Ensemble;Ensamble (Prophets);0.40819;PrivateScore
