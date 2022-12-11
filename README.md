@@ -31,9 +31,11 @@ Figure 2 shows the performances of models in relation to runtime. It should be n
 
 --Figure 2
 
+![Figure 2](https://github.com/qetdr/ML-Electricity-Consumption/blob/main/images/fig2_train_results.png)
+
 ### Reality Check: Kaggle Results
 
-
+![Figure 3](https://github.com/qetdr/ML-Electricity-Consumption/blob/main/images/fig3_kaggle_results.png)
 
 ## Summary and Conclusions
 The best model predicting energy consumption was ... 
