@@ -9,6 +9,13 @@ Andri Hõbemägi <br>
 
 **Project Owner**: Kristjan Eljand
 
+## Files and Directories
+- `main.ipynb`: contains the general workflow demonstration of the entire project;
+- `data`: directory including cleaned data sets used for earlier modeling
+- `images`: directory including figures used in this `README.md` and in the `main.ipynb` notebook;
+- `submissions`: directory including some of the Kaggle submission files
+- `x_old_files`: directory including notebooks containing the main input for the present project. More detailed overview of our workflow, modeling, etc.
+
 ## Project Goal
 The present project was a capstone project for the Machine Learning (MTAT.03.227) course. The general aim was to predict a household's energy consumption. A major side goal of our team was to try out different modeling techniques for educational purposes.
 
