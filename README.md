@@ -37,7 +37,6 @@ The present project was a capstone project for the Machine Learning (MTAT.03.227
 
 ## Our Approach
 Our general approach is illustrated in Figure 1, and the steps with detailed annotation are completed throughout this notebook.
-//![](images/ML_project_workflow.png "Figure 1. General Project Workflow")
 
 ![Figure 1](https://github.com/qetdr/ML-Electricity-Consumption/blob/main/images/ML_project_workflow.png)
 
